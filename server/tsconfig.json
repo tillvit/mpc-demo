@@ -1,0 +1,29 @@
+{
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "display": "Node 24",
+  "_version": "24.0.0",
+
+  "compilerOptions": {
+    "paths": {
+      "jiff-mpc": [ "./common/jiff-types/jiff-mpc.d.ts" ],
+      "jiff-mpc/*": [ "./common/jiff-types/*" ],
+      "@/*": ["../client/src/*"],
+    },
+    "lib": [
+      "es2024",
+      "ESNext.Array",
+      "ESNext.Collection",
+      "ESNext.Iterator",
+      "ESNext.Promise"
+    ],
+    "module": "nodenext",
+    "target": "es2024",
+
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "moduleResolution": "node16",
+    "allowImportingTsExtensions": true,
+    "noEmit": true,
+  }
+}
